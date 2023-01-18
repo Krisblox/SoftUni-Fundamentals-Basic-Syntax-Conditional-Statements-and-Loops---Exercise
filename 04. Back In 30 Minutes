@@ -1,0 +1,49 @@
+using System;
+using System.IO;
+using System.Numerics;
+
+namespace _0._2Nums1to10
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int hour = int.Parse(Console.ReadLine());
+            double minutes = double.Parse(Console.ReadLine());
+            if (minutes >= 30) 
+            {
+                hour++;
+                minutes = 30 - minutes;
+            }
+            else
+            {
+                minutes += 30;
+
+            }
+            if(hour == 24)
+            {
+                hour = 0;
+
+            }
+
+            if (Math.Abs(minutes) < 10) 
+            {
+                Console.WriteLine($"{hour}:0{Math.Abs(minutes)}");
+
+
+            }
+            else
+            {
+                Console.WriteLine($"{hour}:{Math.Abs(minutes)}");
+            }
+
+            
+           
+
+
+
+
+        }
+    }
+}

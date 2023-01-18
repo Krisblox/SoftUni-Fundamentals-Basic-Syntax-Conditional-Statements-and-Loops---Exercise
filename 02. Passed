@@ -1,0 +1,28 @@
+using System;
+using System.IO;
+using System.Numerics;
+
+namespace _0._2Nums1to10
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            double grade = double.Parse(Console.ReadLine());
+
+
+
+            if(grade >= 3.00)
+            {
+
+
+                Console.WriteLine("Passed!");
+            }
+
+
+
+
+        }
+    }
+}
